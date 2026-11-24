@@ -1,0 +1,27 @@
+{
+  "name": "emailverifyfast-mcp",
+  "version": "1.0.1",
+  "description": "Hosted MCP server for EmailVerifyFast email verification (Cloudflare Worker)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "wrangler": "^4.167.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "agents": "^0.34.0",
+    "zod": "^4.6.7"
+  },
+  "private": true,
+  "mcpName": "com.emailverifyfast/email-verification",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fv2020/emailverifyfast-mcp"
+  }
+}

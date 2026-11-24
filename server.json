@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.emailverifyfast/email-verification",
+  "title": "EmailVerifyFast",
+  "description": "Verify email addresses and lists (valid, invalid, catch-all) with EmailVerifyFast.",
+  "version": "1.0.1",
+  "websiteUrl": "https://emailverifyfast.com",
+  "repository": {
+    "url": "https://github.com/fv2020/emailverifyfast-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://emailverifyfast.com/assets/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.emailverifyfast.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your EmailVerifyFast API key as 'Bearer YOUR_KEY'. Create a key at https://emailverifyfast.com/api-access",
+          "value": "Bearer {evf_api_key}",
+          "isRequired": true,
+          "isSecret": true,
+          "variables": {
+            "evf_api_key": {
+              "description": "EmailVerifyFast API key (get one at https://emailverifyfast.com/api-access)",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

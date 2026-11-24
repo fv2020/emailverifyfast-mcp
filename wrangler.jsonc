@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "emailverifyfast-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "vars": { "EVF_API_BASE": "https://emailverifyfast.com" },
+  "routes": [{ "pattern": "mcp.emailverifyfast.com", "custom_domain": true }],
+  "observability": { "enabled": false }
+}

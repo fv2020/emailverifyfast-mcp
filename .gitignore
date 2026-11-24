@@ -1,0 +1,10 @@
+node_modules/
+.wrangler/
+dist/
+.dev.vars
+.env*
+*.pem
+*.key
+registry-auth/
+.deploy_payload.js
+tools/
